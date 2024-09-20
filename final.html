@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> 
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -8,101 +8,96 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            color: #333; /* Color de texto */
-            background-color: #f9f9f9; /* Fondo claro */
-            text-align: center; /* Centrar el texto */
-            padding: 20px; /* Espacio alrededor */
-            overflow-x: hidden; /* Evitar scroll horizontal */
+            color: #333;
+            text-align: center;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            position: relative;
+            background-image: url('Fondo.gif'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column; /* Cambiado para apilar el contenido verticalmente */
+            align-items: center;
+            justify-content: center;
         }
 
         #main {
-            max-width: 800px; /* Ancho máximo del contenido */
-            margin: 0 auto; /* Centrar contenido */
+            max-width: 800px;
+            width: 90%; /* Hacerlo responsivo */
+            height: 80vh; /* Altura del div principal */
+            overflow-y: auto; /* Permitir desplazamiento vertical */
+            background: rgba(200, 200, 200, 0.7); /* Fondo gris semitransparente */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px; /* Espacio entre el div y el footer */
         }
 
         h1 {
             font-size: 2.5rem;
             margin: 20px 0;
             font-weight: bold;
-            color: #e74c3c; /* Color del título */
-            opacity: 0; /* Comienza oculto */
-            transform: translateY(-30px); /* Desplazado hacia arriba */
-            animation: fadeInUp 0.8s forwards 0.5s; /* Animación de entrada */
+            color: #e74c3c;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInUp 0.8s forwards 0.5s;
         }
 
         p {
-            font-size: 1rem; /* Ajustado para mejor legibilidad en móviles */
+            font-size: 1rem;
             line-height: 1.6;
-            max-width: 100%; /* Ancho máximo ajustado */
             margin: 0 auto 20px;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-            opacity: 0; /* Comienza oculto */
-            transform: translateY(-30px); /* Desplazado hacia arriba */
-            animation: fadeInUp 0.8s forwards 0.7s; /* Animación de entrada */
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInUp 0.8s forwards 0.7s;
         }
 
         img {
-            max-width: 80%; /* Tamaño ajustado para ser más responsivo */
-            height: auto; /* Mantener proporciones */
+            max-width: 80%;
+            height: auto;
             margin-top: 20px;
-            border-radius: 10px; /* Bordes redondeados */
-            opacity: 0; /* Comienza oculto */
-            transform: translateY(-30px); /* Desplazado hacia arriba */
-            animation: fadeInUp 0.8s forwards 0.9s; /* Animación de entrada */
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInUp 0.8s forwards 0.9s;
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 20px;
             font-size: 0.9rem;
-            color: #666; /* Color del texto del footer */
+            color: #666;
         }
 
         .heart {
-            color: #e74c3c; /* Color del corazón */
+            color: #e74c3c;
             font-size: 1.5rem;
         }
 
-        /* Animación */
         @keyframes fadeInUp {
             to {
                 opacity: 1;
-                transform: translateY(0); /* Regresa a la posición original */
-            }
-        }
-
-        /* Estilos para modo oscuro */
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: #f9f9f9; /* Color de texto en modo oscuro */
-                background-color: #1e1e1e; /* Fondo oscuro */
-            }
-
-            p {
-                background: rgba(50, 50, 50, 0.9); /* Fondo oscuro semitransparente */
-                box-shadow: none; /* Sin sombra en modo oscuro */
-            }
-
-            footer {
-                color: #ccc; /* Color del texto del footer en modo oscuro */
+                transform: translateY(0);
             }
         }
 
         /* Estilos para dispositivos móviles */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2rem; /* Ajustar tamaño del título */
+                font-size: 2rem;
             }
 
             p {
-                font-size: 0.9rem; /* Tamaño de texto más pequeño para móviles */
-                padding: 10px; /* Espacio alrededor del texto */
+                font-size: 0.9rem;
+                padding: 10px;
             }
 
             img {
-                max-width: 90%; /* Más ancho para pantallas pequeñas */
+                max-width: 90%;
             }
         }
     </style>
@@ -111,13 +106,12 @@
     <div id="main">
         <h1>Feliz Aniversario, Joseph!</h1>
         <p>"A veces, cuando miro atrás, me sorprende pensar en cómo la vida nos juntó,
-            nuestros caminos se juntaron de manera inesperada. La verdad no pensé que
-            llegaríamos a este momento, que te volverías parte importante de mi vida. Algun
-            recuerdo el primer día que te vi, un 13 de julio frente a iShop, yo todo nervioso
+            fue algo muy inesperadom la verdad no pensé que llegaríamos a este momento, que 
+            te volverías parte importante de mi vida. Algunrecuerdo el primer día que te vi, un 13 de julio frente a iShop, yo todo nervioso
             y tú me estabas loqueando jajaja. Me encantó que pudiéramos compartir esas primeras
-            hamburguesas juntos, en el parque ... esa noche fue mágica. Y desde ahí no paramos de
-            hablar, cada cosa que me contabas me gustaba. Cualquier cosa que me dijeras, era 
-            importante para mí, esa primera peli "Un lugar en silencio" tenía tantas ganas de
+            hamburguesas juntos, en el parque ... esa noche fue encantadora. Y desde ahí no paramos de
+            hablar, cada cosa que me contabas me gustaba, cualquier cosa que me dijeras, era 
+            importante para mí. Esa primera peli que vimos "Un lugar en silencio", tenía tantas ganas de
             agarrarte de la mano. El 17 de julio comenzamos a salir oficialmente, acordamos respetarnos
             me gustó tanto que me dijeras eso... que vas a algo serio. Y así empezamos a pasar
             más y más tiempo juntos ... te comencé a involucrar más en mi vida, te contaba cada cosa
@@ -127,9 +121,11 @@
             como técnico de computadora jajaaj, limpié el polvo que ya se está formando en tus
             ventiladores ahhh. Y así llegamos a nuestro primer viaje juntos, te juro que no pensé que
             pasaría pero se logró, me encantó compartir esos 2 días contigo bb, en el castillo o la casita
-            del terror, en frutix yo dando vergüenza, botando todo 🤣. La otra peli la de Romper el círculo,
+            del terror, en frutix yo dando vergüenza, botando todo 🤣. La otra peli "Romper el círculo",
             película profunda la vdd. Luego pasamos a tu cumple, donde quise hacerte algo especial para
-            decirte para estar ejjeje, no salió como pensé pero al final se logró. Me encanta cuidarte cuando
+            decirte para estar ejjeje, no salió como pensé pero al final se logró. No todo ha sido perfecto en 
+            este tiempo, hemos tenido peleas, malos entendidos, discusiones, pero me parece que hemos
+            sabido llevarlo de la mejor manera, con comunicacion. Me encanta cuidarte cuando
             estás mal, siempre me voy a preocupar por ti, siempre te voy a apoyar en todo lo que pueda. Te
             considero un gran hombre que se preocupa por su familia, un hombre con valores. A veces te quieres
             hacer el duro, pero tienes tu corazoncito, que cuando sale es ufff enamora demasiado, 
