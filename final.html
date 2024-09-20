@@ -1,67 +1,147 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Feliz Aniversario</title>
-        <link rel="shortcut icon" href="assets/css/images/favicon.png">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feliz Aniversario</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Color de texto */
+            background-color: #f9f9f9; /* Fondo claro */
+            text-align: center; /* Centrar el texto */
+            padding: 20px; /* Espacio alrededor */
+            overflow-x: hidden; /* Evitar scroll horizontal */
+        }
 
-		<!-- CSS -->
-        <link rel="stylesheet" href="assets/css/main_final.css" />
-        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css" >
+        #main {
+            max-width: 800px; /* Ancho máximo del contenido */
+            margin: 0 auto; /* Centrar contenido */
+        }
 
-	</head>
-	<body class="loading">
-		<!-- Música de Fundo -->
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-                <!-- Header -->
-				<header id="header">
-				    <h1>Gracias Joseph!</h1>
-				    <p>"A veces, cuando miro atras, me sorprende pensar en como la vida nos junto,
-						nuestros caminos se juntaron de manera inesperada. La verdad no pense que
-						llegariamos a este momento, que te volverias parte importante de mi vida. Algun
-						recuerdo el primer dia que te vi, un 13 de julio frente a iShop, yo todo nervioso
-						y tu me estabas loqueando jajaja. Me encanto que pudieramos compartir esas primeras
-						hamburguesas juntos, en el parque ... esa noche fue magica. Y desde ahi no paramos de
-						hablar, cada cosa que me contabas me gustaba. Cualquier cosa que me dijeras, era 
-						importante para mi, esa primera peli "Un lugar en silencio" tenia tantas ganas de
-						agarrarte de la mano. El 17 de julio comenzamos a salir oficialmente, acordamos respetarnos
-						me gusto tanto que me dijeras eso... que vas a algo serio. Y asi empezamos a pasar
-						mas y mas tiempo juntos ... te comence a involucrar mas en mi vida, te contaba cada cosa
-						asi sea insignificante porque me encataba contarte de todo. La peli de Deadpool, disfrute
-						verla contigo, aun tenemos pendiente poner el fondo de pantalla ahh. Cuando fuimos al centro 
-						y pedimos un helado terminando comiendo el helado del otro jejejej. Cuando fui a tu casa
-						como tecnico de computadora jajaaj, limpie el polvo que ya se esta formando en tus
-						ventiladores ahhh. Y asi llegamos a nuestro primer viaje juntos, te juro que no pense que
-						pasaria pero se logro, me encanto compatir esos 2 dias contigo bb, en el castillo o la casita
-						del terror, en frutix yo dando verguenza, botando todo 🤣. La otro peli la de Romper el circulo,
-						pelicula profunda la vdd. Luego pasamos a tu cumple, donde quise hacerte algo especial para
-						decirte para estar ejjeje, no salio como pense pero al final se logro. Me encanta cuidarte cuando
-						estas mal, siempre me voy a preocupar por ti, siempre te voy a apoyar en todo lo que pueda. Te
-						considero un gran hombre que se preocupa por su familia, un hombre con valores. A veces te quieres
-						hacer el duro, pero tienes tu corazoncito, que cuando sale es ufff enamora demasiado, 
-						me encanta que quieras cuidarme de una u otra manera, la seguridad que muestras y que quieras ser
-						mejor cada dia, lo que me dijiste la primera vez, que no vas con juegos. Por eso y muchas cosas
-						mas puedo decirte que te amo!!! Gracias por estar para mi siempre y ser mi compañero, nuevamente
-						quiero decirte, Te amo mucho mi Joseph!!!!!"</p>
-						<img src="js.png" alt="Descripción de la imagen" width="85" height="85" style="object-fit: cover;" />
-				    <nav>
-				    <nav>
-				    </nav>
-				</header>
-				<!-- Footer -->
-				<footer id="footer">
-				    <p> Juan Guzman &ensp;<span class="icon fa-heart"></span>&ensp; Joseph Ramon </p>
-				</footer>
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #e74c3c; /* Color del título */
+            opacity: 0; /* Comienza oculto */
+            transform: translateY(-30px); /* Desplazado hacia arriba */
+            animation: fadeInUp 0.8s forwards 0.5s; /* Animación de entrada */
+        }
+
+        p {
+            font-size: 1rem; /* Ajustado para mejor legibilidad en móviles */
+            line-height: 1.6;
+            max-width: 100%; /* Ancho máximo ajustado */
+            margin: 0 auto 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            opacity: 0; /* Comienza oculto */
+            transform: translateY(-30px); /* Desplazado hacia arriba */
+            animation: fadeInUp 0.8s forwards 0.7s; /* Animación de entrada */
+        }
+
+        img {
+            max-width: 80%; /* Tamaño ajustado para ser más responsivo */
+            height: auto; /* Mantener proporciones */
+            margin-top: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+            opacity: 0; /* Comienza oculto */
+            transform: translateY(-30px); /* Desplazado hacia arriba */
+            animation: fadeInUp 0.8s forwards 0.9s; /* Animación de entrada */
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666; /* Color del texto del footer */
+        }
+
+        .heart {
+            color: #e74c3c; /* Color del corazón */
+            font-size: 1.5rem;
+        }
+
+        /* Animación */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Regresa a la posición original */
+            }
+        }
+
+        /* Estilos para modo oscuro */
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #f9f9f9; /* Color de texto en modo oscuro */
+                background-color: #1e1e1e; /* Fondo oscuro */
+            }
+
+            p {
+                background: rgba(50, 50, 50, 0.9); /* Fondo oscuro semitransparente */
+                box-shadow: none; /* Sin sombra en modo oscuro */
+            }
+
+            footer {
+                color: #ccc; /* Color del texto del footer en modo oscuro */
+            }
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Ajustar tamaño del título */
+            }
+
+            p {
+                font-size: 0.9rem; /* Tamaño de texto más pequeño para móviles */
+                padding: 10px; /* Espacio alrededor del texto */
+            }
+
+            img {
+                max-width: 90%; /* Más ancho para pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Feliz Aniversario, Joseph!</h1>
+        <p>"A veces, cuando miro atrás, me sorprende pensar en cómo la vida nos juntó,
+            nuestros caminos se juntaron de manera inesperada. La verdad no pensé que
+            llegaríamos a este momento, que te volverías parte importante de mi vida. Algun
+            recuerdo el primer día que te vi, un 13 de julio frente a iShop, yo todo nervioso
+            y tú me estabas loqueando jajaja. Me encantó que pudiéramos compartir esas primeras
+            hamburguesas juntos, en el parque ... esa noche fue mágica. Y desde ahí no paramos de
+            hablar, cada cosa que me contabas me gustaba. Cualquier cosa que me dijeras, era 
+            importante para mí, esa primera peli "Un lugar en silencio" tenía tantas ganas de
+            agarrarte de la mano. El 17 de julio comenzamos a salir oficialmente, acordamos respetarnos
+            me gustó tanto que me dijeras eso... que vas a algo serio. Y así empezamos a pasar
+            más y más tiempo juntos ... te comencé a involucrar más en mi vida, te contaba cada cosa
+            así sea insignificante porque me encantaba contarte de todo. La peli de Deadpool, disfruté
+            verla contigo, aún tenemos pendiente poner el fondo de pantalla ahh. Cuando fuimos al centro 
+            y pedimos un helado terminando comiendo el helado del otro jejejej. Cuando fui a tu casa
+            como técnico de computadora jajaaj, limpié el polvo que ya se está formando en tus
+            ventiladores ahhh. Y así llegamos a nuestro primer viaje juntos, te juro que no pensé que
+            pasaría pero se logró, me encantó compartir esos 2 días contigo bb, en el castillo o la casita
+            del terror, en frutix yo dando vergüenza, botando todo 🤣. La otra peli la de Romper el círculo,
+            película profunda la vdd. Luego pasamos a tu cumple, donde quise hacerte algo especial para
+            decirte para estar ejjeje, no salió como pensé pero al final se logró. Me encanta cuidarte cuando
+            estás mal, siempre me voy a preocupar por ti, siempre te voy a apoyar en todo lo que pueda. Te
+            considero un gran hombre que se preocupa por su familia, un hombre con valores. A veces te quieres
+            hacer el duro, pero tienes tu corazoncito, que cuando sale es ufff enamora demasiado, 
+            me encanta que quieras cuidarme de una u otra manera, la seguridad que muestras y que quieras ser
+            mejor cada día, lo que me dijiste la primera vez, que no vas con juegos. Por eso y muchas cosas
+            más puedo decirte que te amo!!! Gracias por estar para mí siempre y ser mi compañero, nuevamente
+            quiero decirte, ¡Te amo mucho mi Joseph, gracias por todo este tiempo juntos!"</p>
+        <img src="js.png" alt="Descripción de la imagen">
+    </div>
+
+    <footer>
+        <p>Juan Guzmán &ensp;<span class="heart">❤️</span>&ensp; Joseph Ramón</p>
+    </footer>
+</body>
 </html>

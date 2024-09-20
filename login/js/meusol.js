@@ -215,5 +215,5 @@ function validate() {
 }
 
 function alerta() {
-    swal("Desculpa!", "Não posso aceitar, você não parece ser Claudia Medeiros! :(")
+    swal("Disculpa!", "Al parecer no eres Joseph Ramon! :(")
 }
